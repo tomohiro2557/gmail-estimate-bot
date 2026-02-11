@@ -36,7 +36,7 @@ const GENERATION_CONFIG = {
 
 // ========================
 
-function pollPriceLabelAndNotifySlack() {
+function pollEstimateLabelAndNotifySlack() {
   const props = PropertiesService.getScriptProperties();
   const apiKey = props.getProperty("GEMINI_API_KEY");
   const webhookUrl = props.getProperty("SLACK_WEBHOOK_URL");
@@ -150,4 +150,5 @@ function postToSlack_(webhookUrl, text) {
     payload: JSON.stringify({ text })
   });
 }
+
 
