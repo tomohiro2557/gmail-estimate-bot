@@ -21,8 +21,8 @@ const SLACK_TEXT_TEMPLATE =
 // ========================
 // 固定設定
 // ========================
-const TARGET_LABEL = "QUOTATION";
-const DONE_LABEL = "DONE_QUOTATION";
+const TARGET_LABEL = "ESTIMATE";
+const DONE_LABEL = "DONE_ESTIMATE";
 const MAX_THREADS = 10;
 const MAX_BODY_FOR_SLACK = 2500;
 const MAX_BODY_FOR_GEMINI = 6000;
@@ -150,3 +150,4 @@ function postToSlack_(webhookUrl, text) {
     payload: JSON.stringify({ text })
   });
 }
+
